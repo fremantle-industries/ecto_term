@@ -16,6 +16,19 @@ def deps do
 end
 ```
 
+## Usage
+
+```elixir
+defmodule MyApp.Venue do
+  use MyApp.Web, :model
+
+  schema "venues" do
+    field :adapter, EctoTerm  # serialized BERT binary in DB
+    ...
+  end
+end
+```
+
 ## Authors
 
 - Alex Kwiatkowski - alex+git@fremantle.io
